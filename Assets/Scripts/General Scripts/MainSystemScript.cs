@@ -20,7 +20,7 @@ public class MainSystemScript : MonoBehaviour
     public int[] Night1f,Night2f,Night3f,Night4f,Night5f,Night6f,Night8f;
     public int[] Night1g,Night2g,Night3g,Night4g,Night5g,Night6g,Night8g;
     [Range(-1, 20)] public int Night7a,Night7b,Night7c,Night7d,Night7e,Night7f,Night7g;
-    public bool NightBacktrack7;
+    public bool NightBacktrack7,CanSkipLoadingScreen;
     public bool[] NightBacktrack1,NightBacktrack2,NightBacktrack3,NightBacktrack4,NightBacktrack5,NightBacktrack6,NightBacktrack8;
     public int CurrentNight;
     public GameObject[] NightButtons;
@@ -68,7 +68,12 @@ public class MainSystemScript : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadScene("MainMenu");
         }
-
+        if (Input.GetKeyDown(KeyCode.Space) && SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "NightGame" && CanSkipLoadingScreen == true)
+        {
+            CancelInvoke("ChangeSceneToNight");
+            CanSkipLoadingScreen = false;
+            SceneManager.LoadScene("NightGame");
+        }
     }
     //To transition from MainMenu to Night
     public void Night(int Day)
@@ -163,6 +168,7 @@ public class MainSystemScript : MonoBehaviour
         Invoke("ChangeSceneToLoadingScreen2",0.2f);
     }
     void ChangeSceneToLoadingScreen2(){
+        CanSkipLoadingScreen = true;
 
         GameObject targetObject = GameObject.Find("UI Loading Text");
         LoadingText = targetObject.GetComponent<TextMeshProUGUI>();
@@ -171,6 +177,7 @@ public class MainSystemScript : MonoBehaviour
         Invoke("ChangeSceneToNight",12.5f);
     }
     void ChangeSceneToNight(){
+        CanSkipLoadingScreen = false;
         SceneManager.LoadScene("NightGame");
     }
 

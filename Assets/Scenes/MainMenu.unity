@@ -5138,24 +5138,24 @@ MonoBehaviour:
   Night5c: 0800000009000000090000000a0000000a0000000a000000
   Night6c: 070000000a0000000d0000000f0000000f00000010000000
   Night8c: ffffffffffffffffffffffffffffffffffffffffffffffff
-  Night1d: 000000000000000000000000000000000000000000000000
-  Night2d: 000000000000000000000000000000000000000000000000
-  Night3d: 000000000000000000000000000000000000000000000000
+  Night1d: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night2d: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night3d: ffffffffffffffffffffffffffffffffffffffffffffffff
   Night4d: 050000000500000005000000050000000500000005000000
   Night5d: 050000000700000007000000070000000700000007000000
   Night6d: 0a0000000a0000000a0000000a0000000a0000000a000000
   Night8d: ffffffffffffffffffffffffffffffffffffffffffffffff
-  Night1e: 000000000000000000000000000000000000000000000000
-  Night2e: 000000000000000000000000000000000000000000000000
-  Night3e: 000000000000000000000000000000000000000000000000
+  Night1e: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night2e: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night3e: ffffffffffffffffffffffffffffffffffffffffffffffff
   Night4e: 010000000500000006000000070000000800000008000000
   Night5e: 010000000700000008000000080000000a0000000a000000
   Night6e: 0500000005000000050000000a0000000f0000000f000000
   Night8e: ffffffffffffffffffffffffffffffffffffffffffffffff
-  Night1f: 000000000000000000000000000000000000000000000000
-  Night2f: 000000000000000000000000000000000000000000000000
-  Night3f: 000000000000000000000000000000000000000000000000
-  Night4f: 000000000000000000000000000000000000000000000000
+  Night1f: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night2f: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night3f: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night4f: ffffffffffffffffffffffffffffffffffffffffffffffff
   Night5f: 000000000400000005000000060000000700000007000000
   Night6f: 0400000007000000080000000a0000000e0000000f000000
   Night8f: ffffffffffffffffffffffffffffffffffffffffffffffff
@@ -5165,7 +5165,7 @@ MonoBehaviour:
   Night4g: ffffffffffffffffffffffffffffffffffffffffffffffff
   Night5g: ffffffffffffffffffffffffffffffffffffffffffffffff
   Night6g: 000000000a0000000f0000000f0000001400000014000000
-  Night8g: ffffffffffffffffffffffffffffffffffffffffffffffff
+  Night8g: 140000001400000014000000140000001400000014000000
   Night7a: 0
   Night7b: 0
   Night7c: 0
@@ -5174,6 +5174,7 @@ MonoBehaviour:
   Night7f: 0
   Night7g: 0
   NightBacktrack7: 0
+  CanSkipLoadingScreen: 0
   NightBacktrack1: 010001000100
   NightBacktrack2: 010101000000
   NightBacktrack3: 000000010101
