@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ObjectRandomizer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] Objects;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        int RandomObjectSelector = UnityEngine.Random.Range(0, Objects.Length);
+        for (int i = 0; i < Objects.Length; i++){Objects[i].SetActive(i == RandomObjectSelector);}
     }
 }
